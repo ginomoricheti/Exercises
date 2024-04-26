@@ -1,0 +1,104 @@
+/* Global Styles. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body{
+  background: #999;
+}
+
+/* Quote Box Style */
+.quote-box{
+  background: #FFF;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Style */
+.quote-box h2{
+  position: relative;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* Title underline */
+.quote-box h2::after{
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* Quote phrase Style */
+.quote-box blockquote{
+  font-size: 26px;
+  min-height: 110px;
+}
+.quote-box blockquote::before,
+.quote-box blockquote::after{
+  content: '"';
+}
+
+/* Quote author */
+.quote-box span{
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+.quote-box span::before{
+  content: '';
+  width: 15px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  top: 50%;
+  left: -30%;
+}
+
+/* Buttons Style */
+.quote-box div{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.quote-box button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 25px;
+  background: rgb(23, 124, 229);
+  border: 1px solid rgb(23, 124, 229);
+  cursor: pointer;
+}
+.quote-box button:last-child{
+  color: rgb(23, 124, 229);
+  background:  #FFF;
+}
+.quote-box button i{
+  margin-right: 10px;
+}
