@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+/* NAVIGATION */
+nav{
+  display: flex;
+  position: relative;
+  width: 600px;
+  height: 60px;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+nav label{
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  color: #8e44ad;
+  cursor: pointer;
+  transition: all 0.45s ease;
+  z-index: 1;
+}
+nav label:first-child{
+  margin-left: 0;
+  border-radius: 5px 0 0 5px;
+}
+nav label:last-child{
+  border-radius: 0 5px 5px 0;
+  margin-right: 0;
+}
+nav label:hover{
+  scale: 1.1;
+}
+nav label i{
+  margin-right: 4px;
+}
+/* SLIDER */
+.slider{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: #8e44ad;
+  left: 0;
+  top: 0;
+  border-radius: 5px 0 0 5px;
+  transition: all 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+/* MOVEMENT */
+.container input[type="radio"]{
+  display: none;
+}
+#home:checked ~ nav label.home, 
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+#about:checked ~ nav label.about{
+  color: #fff;
+}
+#blog:checked ~ nav .slider{
+  left: 20%;
+  border-radius: 0px;
+}
+#code:checked ~ nav .slider{
+  left: 40%;
+  border-radius: 0px;
+}
+#help:checked ~ nav .slider{
+  left: 60%;
+  border-radius: 0px;
+}
+#about:checked ~ nav .slider{
+  left: 80%;
+  border-radius: 0 5px 5px 0;
+}

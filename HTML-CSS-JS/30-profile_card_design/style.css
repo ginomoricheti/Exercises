@@ -1,0 +1,150 @@
+/* GLOBAL ------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background: #3498db;
+}
+/* MAIN BOX ------------------------------------------------------------------------------*/
+.main-box{
+  height: 550px;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main-box .content{
+  position: relative;
+  height: 100%;
+  background: 100%;
+}
+/* BUTTONS ------------------------------------------------------------------------------*/
+.content .box{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  left: 0;
+  bottom: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.content .box .share, .cancel{
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  left: 20px;
+  top: 0;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2980b0;
+  background: #fff;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.content .box .share{
+  opacity: 1;
+}
+#check{
+  display: none;
+}
+#check:checked ~ .box .share{
+  opacity: 0;
+}
+#check:checked ~ .box .cancel{
+  opacity: 1;
+}
+/* PROFILE IMG ------------------------------------------------------------------------------*/
+.content .image-box{
+  position: absolute;
+  height: 450px;
+  width: 100%;
+  border-radius: 25px;
+  background: #fff;
+  padding: 10px;
+  left: 0;
+  bottom: 130px;
+  transition: all 0.4s ease;
+}
+#check:checked ~ .image-box{
+  bottom: 105px;
+}
+/* ARROW BELOW IMG ----------------*/
+.content .image-box::before{
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%) rotate(45deg);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+#check:checked ~ .image-box::before{
+  background: #7f7f7f;
+}
+.content .image-box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+/* ABOUT  ------------------------------------------------------------------------------*/
+.image-box .about{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .image-box .about{
+  opacity: 1;
+}
+/* NAME, JOB & ICONS  ------------------------------------------------------------------------------*/
+.about .details{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 35px;
+}
+.details .name,
+.details .job{
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.details .name{
+  font-size: 22px;
+}
+.details .icons i{
+  height: 45px;
+  width: 45px;
+  margin: 14px 5px;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+  line-height: 41px;
+  transition: all 0.3s ease;
+}
+.details .icons i:hover{
+  background: #fff;
+  color: #2980b0;
+}

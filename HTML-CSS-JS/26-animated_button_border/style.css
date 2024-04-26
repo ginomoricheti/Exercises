@@ -1,0 +1,47 @@
+/* GLOBAL ------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+html, body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #000;
+}
+/* BUTTON ------------------------------------------------------------------------------*/
+.btn a{
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 220px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+}
+.btn a span{
+  height: 88%;
+  width: 96%;
+  background: #111;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: #fff;
+  line-height: 62px;
+  border-radius: 6px;
+}
+/* ANIMATION ------------------------------------------------------------------------------*/
+.btn a:hover{
+  animation: animate 2s linear infinite;
+}
+@keyframes animate {
+  100%{
+    filter: hue-rotate(-360deg);
+  }
+}

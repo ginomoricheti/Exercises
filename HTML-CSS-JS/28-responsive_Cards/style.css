@@ -1,0 +1,158 @@
+/* GLOBAL ------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+html, body{
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: #121212;
+}
+/* PROFILE BOXES ------------------------------------------------------------------------------*/
+.container{
+  max-width: 1100px;
+  min-width: 328px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container .box{
+  width: calc(33% - 10px);
+  height: 500px;
+  background: #4B4B4B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.container .box:first-child, 
+.container .box:last-child{
+  max-height: 450px;
+}
+/* PROFILE IMAGES ------------------------------------------------------------------------------*/
+.box .image{
+  height: 150px;
+  width: 150px;
+  padding: 3px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+.box .image:hover{
+  height: 250px;
+  width: 250px;
+}
+.box .image:hover ~ p,
+.box .image:hover ~ .btns{
+  display: none;
+}
+.box .image.fighter{
+  background: red;
+  border-radius: 50%;
+}
+.box .image.mage{
+  background: blue;
+  border-radius: 50%;
+}
+.box .image.adc{
+  background: yellow;
+  border-radius: 50%;
+}
+.box .image.fighter{
+  background: red;
+  border-radius: 50%;
+}
+.box .image img{
+  height: 99%;
+  width: 99%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+/* PROFILE NAME ------------------------------------------------------------------------------*/
+.box .name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin: 10px 0 3px 0;
+}
+/* PROFILE RATING ------------------------------------------------------------------------------*/
+.box .rating i{
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+/* PROFILE TEXT ------------------------------------------------------------------------------*/
+.box p{
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify;
+  color: #fff;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+/* BUTTONS TEXT ------------------------------------------------------------------------------*/
+.btns{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.btns button{
+  width: 100%;
+  padding: 9px 0px;
+  color: #FFFFFF;
+  background: none;
+  outline: none;
+  border: 2px solid #F9F9F9;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 0.2s linear;
+}
+.btns button:first-child{
+  background: red;
+  margin-right: 5px;
+  border: none;
+  color: #121212;
+}
+.btns button:first-child:hover{
+  background: none;
+  border: 2px solid red;
+  color: red;
+}
+.btns button:last-child{
+  border: 2px solid #F9F9F9;
+  margin-left: 5px;
+  color: #121212;
+  background: #D3D3D3;
+}
+.btns button:last-child:hover{
+  background: #4B4B4B ;
+  border: none;
+  color: #fff;
+  border: 2px solid #F9F9F9;
+}
+/* RESPONSIVE QUERYS ------------------------------------------------------------------------------*/
+@media (max-width:1045px) {
+  .container .box{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    height: 450px;
+  }
+}
+@media (max-width:710px) {
+  .container .box{
+    width: 100%;
+  }
+}

@@ -1,0 +1,68 @@
+/* GLOBAL ------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #222;
+}
+/* CONTAINER BOX & TITLE  ------------------------------------------------------------------------------*/
+.container{
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+.container h1{
+  font-size: 24px;
+  font-weight: 600;
+  color: #001E4D;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+/* QUIZ SECTION ------------------------------------------------------------------------------*/
+.container .quiz{ /* BOX */
+  padding: 20px 0;
+}
+.container .quiz h2{ /* QUESTION */
+  font-size: 18px;
+  font-weight: 600;
+  color: #001E4D;
+}
+.container .btn{ /* POSSIBLE OPTIONS */
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container .btn:hover:not([disabled]){ /* HOVER EFFECT */
+  background: #222;
+  color: #fff;
+}
+.container .btn:disabled{
+  cursor: no-drop;
+}
+#next-btn{ /* BUTTON TO GO TO NEXT QUESTION */
+  display: none;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  font-weight: 500;
+  color: #fff;
+  background: #001E4D;
+  border-radius: 4px;
+  cursor: pointer;
+}

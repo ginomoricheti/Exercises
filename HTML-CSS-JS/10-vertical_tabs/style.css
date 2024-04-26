@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+html, body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: lightgrey;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 20px;
+  padding: 40px 50px 40px 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.container .main-title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .content .list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 20%;
+  margin-right: 50px;
+}
+
+.container .content .list::before {
+  content: "";
+  position: absolute;
+  background: lightgray;
+  width: 2px;
+  height: 100%;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content .list label {
+  height: 60px;
+  /* background: red; */
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 12px;
+  line-height: 60px;
+  cursor: pointer;
+  margin: 5px 0;
+  padding-left: 25px;
+  color: #333;
+  z-index: 12;
+  transition: all 400ms ease;
+}
+
+.content .list label:hover {
+  color: #6d50e2;
+}
+
+.content .list i {
+  margin-right: 10px;
+  transition: all 150ms ease;
+}
+
+.container .indicator {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #6d50e2;
+  border-radius: 12px;
+  transition: all 400ms ease;
+}
+
+#home:checked ~ .list .home,
+#blog:checked ~ .list .blog,
+#help:checked ~ .list .help,
+#code:checked ~ .list .code,
+#about:checked ~ .list .about {
+  color: #fff;
+}
+
+#home:checked ~ .indicator {
+  top: 0;
+}
+
+#blog:checked ~ .list .indicator {
+  top: 70px;
+}
+
+#help:checked ~ .list .indicator {
+  top: 140px;
+}
+
+#code:checked ~ .list .indicator {
+  top: 210px;
+}
+
+#about:checked ~ .list .indicator {
+  top: 280px;
+}
+
+.container input[type="radio"] {
+  display: none;
+}
+
+.container .content .text-content {
+  width: 80%;
+  height: 100%;
+}
+
+.content .text-content .text {
+  display: none;
+}
+
+.content .text-content .home {
+  display: block;
+}
+
+#home:checked ~ .text-content .home,
+#help:checked ~ .text-content .help,
+#blog:checked ~ .text-content .blog,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about {
+  display: block;
+}
+
+#help:checked ~ .text-content .home,
+#blog:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home {
+  display: none;
+}
+
+.content .text-content .title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.content .text-content p {
+  text-align: justify;
+}
+
+
+@media (max-width:949px) {
+  .container{
+    margin: 40px 0;
+    width: 75%;
+    height: 75%;
+  }
+
+  .container .main-title {
+    display: none;
+  }
+
+  .container .content{
+    flex-direction: column;
+  }
+  .container .content .list{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .content .list label {
+    font-size: 16px;
+  }
+
+  .container .indicator {
+    display: none;
+  }
+
+  #home:checked ~ .list .home,
+  #blog:checked ~ .list .blog,
+  #help:checked ~ .list .help,
+  #code:checked ~ .list .code,
+  #about:checked ~ .list .about {
+    color: #6d50e2;
+  }
+
+  .container .content .list::before{
+    display: none;
+  }
+  .container .content .text-content{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width:790px) {
+  .container{
+    min-width: 450px;
+    width: 85%;
+    height: 85%;
+  }
+  .container .content{
+    flex-direction: column;
+  }
+  .container .content .list{
+    width: 100%;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .content .list i {
+    font-size: 18px;
+  }
+
+  .content .list label span {
+    display: none;
+  }
+
+  #home:checked ~ .indicator,
+  #blog:checked ~ .list .indicator,
+  #help:checked ~ .list .indicator,
+  #code:checked ~ .list .indicator,
+  #about:checked ~ .list .indicator {
+    top: 15px;
+  }
+
+  .container .content .list::before{
+    display: none;
+  }
+  .container .content .text-content{
+    width: 100%;
+    margin-left: 0;
+  }
+}
