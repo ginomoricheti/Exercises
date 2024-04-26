@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/HTML-CSS-JS/41-qr_generator/styles.css">
   <script src="https://kit.fontawesome.com/44ead951f6.js" crossorigin="anonymous"></script>
-  <title>Gino Morichetti Simple Quiz</title>
+  <title>Gino Morichetti QR Generator</title>
 </head>
 
 <body>
-  
-  
-
+  <div class="container">
+    <div class="input-box">
+      <h1>Enter your text or URL</h1>
+      <input type="text" id="link" placeholder="Introduce a text or URL">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" id="qr-image">
+      <button id="sendLink" onclick="getQR()">Generate QR Code</button>
+    </div>
+  </div>
 </body>
 <script src="/HTML-CSS-JS/41-qr_generator/scripts.js"></script>
 </html>
