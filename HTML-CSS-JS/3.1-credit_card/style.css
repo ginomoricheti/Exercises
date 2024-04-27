@@ -18,7 +18,7 @@ body {
 
 .container {
   position: relative;
-  background-image: url(/CreditCard-v2/images/bg.png);
+  background-image: url(/HTML-CSS-JS/3.1-credit_card/images/bg.png);
   background-size: cover;
   padding: 25px;
   border-radius: 28px;

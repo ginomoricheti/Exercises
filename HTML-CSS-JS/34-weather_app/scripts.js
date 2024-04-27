@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.querySelector(".city").innerHTML = data.name;
       document.querySelector(".humidity").innerHTML = `${data.main.humidity}%`;
       document.querySelector(".wind").innerHTML = `${data.wind.speed} km/h`;
-      document.querySelector(".weather-icon").src = `/34-weather_app/images/${data.weather[0].main}.png`;
+      document.querySelector(".weather-icon").src = `/HTML-CSS-JS/34-weather_app/images/${data.weather[0].main}.png`;
     }
   }
 

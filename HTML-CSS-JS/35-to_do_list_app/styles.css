@@ -70,7 +70,7 @@
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url(/35-to_do_list_app/images/unchecked.png);
+  background-image: url(/HTML-CSS-JS/35-to_do_list_app/images/unchecked.png);
   background-size: cover;
   background-position: center;
   top: 12px;
@@ -81,7 +81,7 @@
   text-decoration: line-through;
 }
 .container ul li.checked::before{
-  background-image: url(/35-to_do_list_app/images/checked.png);
+  background-image: url(/HTML-CSS-JS/35-to_do_list_app/images/checked.png);
 }
 .container ul li span{
   position: absolute;
