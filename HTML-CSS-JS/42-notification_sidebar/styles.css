@@ -1,0 +1,116 @@
+/* Global Style*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body{
+  background: #222;
+}
+
+/* Box Container Style */
+.buttons{
+  width: auto;
+  margin: 10px 30px;
+}
+
+/* Buttons Style */
+.buttons button{
+  width: 150px;
+  margin: 10px 5px 10px 5px;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+/* Hover button effect */
+.buttons button:nth-child(1):hover{
+  color: #fff;
+  background: green;
+}
+.buttons button:nth-child(2):hover{
+  color: #fff;
+  background: red;
+}
+.buttons button:nth-child(3):hover{
+  color: #fff;
+  background: orange;
+}
+
+/* Notification box */
+#toast-box{
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+}
+
+/* Message box */
+.toast{
+  position: relative;
+  width: 300px;
+  margin: 0 0 10px 0;
+  padding: 20px;
+  font-size: 16px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.10);
+  transform: translateX(100%);
+  animation: appear 500ms linear forwards;
+}
+
+/* Message Icon Style */
+.toast i{
+  margin-right: 10px;
+}
+.toast .fa-circle-check{
+  color: green;
+}
+.toast .fa-circle-xmark{
+  color: red;
+}
+.toast .fa-circle-exclamation{
+  color: orange;
+}
+
+/* Time Left Bar */
+.toast::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: gray;
+  border-radius: 0 10px 10px 0;
+  animation: timeLeft 5s linear forwards;
+}
+
+/* Animations */
+@keyframes appear {
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes timeLeft {
+  100%{
+    width: 0;
+  }
+  0%{
+    width: 100%;
+  }
+}
