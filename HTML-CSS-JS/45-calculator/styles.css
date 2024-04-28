@@ -68,3 +68,8 @@ body{
 .calc-box form div:last-child input:last-child{
   width: 140px;
 }
+
+/* Operators Style */
+.calc-box form .op{
+  color: aqua;
+}
