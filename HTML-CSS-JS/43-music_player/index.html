@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/HTML-CSS-JS/43-music_player/styles.css">
+  <script src="https://kit.fontawesome.com/44ead951f6.js" crossorigin="anonymous"></script>
+  <title>Gino Morichetti Music Player</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <img src="/HTML-CSS-JS/43-music_player/src/468-thumbnail.png" class="song-img">
+      <h1>Springtime</h1>
+      <p>by Scandinavianz</p>
+
+      <audio id="song">
+        <source src="/HTML-CSS-JS/43-music_player/src/Springtime – Scandinavianz.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id="progress">
+
+      <div class="controls">
+        <div><i class="fa-solid fa-backward-step"></i></div>
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playPauseSong()"><i class="fa-solid fa-play" id="control-icon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+        <div><i class="fa-solid fa-forward-step"></i></div>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+<script src="/HTML-CSS-JS/43-music_player/scripts.js"></script>
+</html>

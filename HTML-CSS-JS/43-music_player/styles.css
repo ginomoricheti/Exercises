@@ -1,0 +1,128 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body{
+  background: #222;
+}
+
+/* Container Style */
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Music Player Box */
+.container .music-player{
+  width: 400px;
+  padding: 25px 35px;
+  text-align: center;
+  border-radius: 5px;
+  background: #FFE0E5;
+}
+
+/* Nav Music Player Style */
+.music-player nav{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.music-player nav .circle{
+  width: 40px;
+  height: 40px;
+  background: #FFF;
+  color: #F53192;
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* Song Image Style */
+.song-img{
+  width: 220px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+
+/* Song Name & Author */
+.music-player h1{
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 20px;
+}
+
+.music-player p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #444;
+}
+
+/* Progress Bar Style */
+#progress{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #F53192;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+#progress::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: #F53192;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 4px solid #FFF;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+/* Hover showing volume */
+.volume-container:hover .vertical-slider {
+  opacity: 1;
+}
+
+
+/* Control Buttons Style */
+.controls{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.controls div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 0 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.controls div i{
+  font-size: 26px;
+  -webkit-text-stroke: 1px rgba(255, 26, 26, 0.5);
+  color: white;
+  text-shadow: 2px 2px 0 rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+}
+.controls div:first-child i, 
+.controls div:last-child i{
+  font-size: 20px;
+}
