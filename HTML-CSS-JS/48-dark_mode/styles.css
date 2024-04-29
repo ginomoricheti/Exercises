@@ -1,0 +1,137 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+/* Light/Dark Theme Style */
+:root{
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+.dark-theme{
+  --primary-color: #212121;
+  --secondary-color: #edf2fc;
+}
+
+/* Body Style */
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: var(--primary-color);
+  position: relative;
+}
+
+/* Navigation Bar Box Style */
+.hero nav{
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Style */
+.hero .logo{
+  width: 100px;
+  cursor: pointer;
+}
+
+/* Nav Buttons Style */
+.hero nav ul{
+  flex: 1;
+  text-align: right;
+}
+.hero nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+.hero nav ul li a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.hero nav ul li a:hover{
+  color: #ff4321;
+}
+
+/* Light/Dark Mode Image Style */
+.hero nav #light-dark-theme{
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Name & Description Style */
+.hero .info{
+  margin: 15% 0 0 8%;
+}
+.hero .info h1{
+  font-size: 70px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+.hero .info h1 span{
+  color: #ff4321;
+}
+.hero .info p{
+  color: var(--secondary-color);
+  line-height: 22px;
+}
+
+/* Download CV Button Style */
+.hero .info a{
+  background: var(--secondary-color);
+  padding: 10px 18px;
+  text-decoration: 0;
+  color: var(--primary-color);
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+/* Image Box */
+.hero .img-box{
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  width: 45%;
+  height: 80%;
+}
+
+/* Image Style */
+.hero .img-box img{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+/* Image Hover Animation */
+.hero .img-box:hover .back-img{
+  bottom: 40px;
+}
+.hero .img-box:hover .front-img{
+  left: 54%;
+}
+
+/* Social Media Buttons */
+.hero .social-links{
+  margin: 200px 0 0 8%;
+}
+.hero .social-links a{
+  font-size: 30px;
+  color: var(--secondary-color);
+  text-decoration: 0;
+  margin-right: 30px;
+}
+.hero .social-links a:hover{
+  color: #ff4321;
+}
