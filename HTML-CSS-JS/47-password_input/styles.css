@@ -1,0 +1,117 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body{
+  background: #222;
+}
+
+/* Center Container Style */
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Container Box Generate Password Style */
+.container-genpass{
+  width: 70%;
+  max-width: 700px;
+  margin: 12%;
+  padding: 40px;
+  color: #f2f2f2;
+  border: 3px solid #019F55;
+  background:hsla(152, 99%, 31%, 0.10);
+  border-radius: 25px;
+}
+
+/* Title */
+.container h1{
+  font-weight: 500;
+  font-size: 45px;
+}
+.container h1 span{
+  margin-left: 25px;
+  color: #019F55;
+  text-decoration: underline;
+}
+
+/* Input content */
+.container .display{
+  width: 92%;
+  margin: 40px auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+.container .display input{
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+/* Copy Image Style */
+.container .display img{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Button Copy Image */
+.container button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  margin-left: 25px;
+  border: 0;
+  outline: 0;
+  background: #019F55;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container button img{
+  width: 28px;
+  margin-right: 10px;
+}
+
+/* Input Box Style */
+.container .input-box{
+position: relative;
+margin-bottom: 50px;
+}
+
+/* Input Style */
+.container .input-box input{
+  width: 350px;
+  padding: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  outline: 0;
+  border: 3px solid #019F55;
+}
+
+/* Image Style */
+.container .input-box img{
+  position: absolute;
+  width: 25px;
+  right: 15px;
+  top: 29px;
+  cursor: pointer;
+}

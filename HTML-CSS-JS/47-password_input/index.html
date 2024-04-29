@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/HTML-CSS-JS/47-password_input/styles.css">
+  <script src="https://kit.fontawesome.com/44ead951f6.js" crossorigin="anonymous"></script>
+  <title>Gino Morichetti Simple Quiz</title>
+</head>
+
+<body>
+  
+<div class="container">
+  <div class="container-genpass">
+    <h1 id="h1">Generate a <br><span>Random Password</span></h1>
+    <div class="display">
+      <input type="text" id="gen-password" placeholder="Password">
+      <img src="/HTML-CSS-JS/37-random_password_generator/images/copy.png" onclick="copyPassword()">
+    </div>
+    <button onclick="createPassword()"><img src="/HTML-CSS-JS/37-random_password_generator/images/generate.png">Generate password</button>
+  </div>
+  <div class="input-box">
+    <input id="password" type="password">
+    <img id="show-hide" src="/HTML-CSS-JS/47-password_input/images/eye-open.png" onclick="showHidePassword()">
+  </div>
+
+</div>
+
+</body>
+<script src="/HTML-CSS-JS/47-password_input/scripts.js"></script>
+</html>
