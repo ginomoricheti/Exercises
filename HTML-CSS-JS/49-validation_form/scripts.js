@@ -82,3 +82,22 @@ function validateMessage(){
   messageError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
   return true;
 }
+
+// Validating all inputs for submit
+
+function validateForm(){
+  if  (!validateName() ||
+      !validatePhone() || 
+      !validateEmail() || 
+      !validateMessage()
+      ){
+    submitError.style.display = 'block';
+    submitError.innerHTML = 'Please, fix the error to submit';
+
+    setTimeout(()=>{
+      submitError.style.display = 'none';
+    }, 3000)
+    
+    return false
+  }
+}
