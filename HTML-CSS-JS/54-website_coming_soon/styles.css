@@ -1,0 +1,109 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body{
+  background: #222;
+}
+
+/* Main Box Style */
+.hero{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/HTML-CSS-JS/54-website_coming_soon/images/background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0 8%;
+}
+
+/* Logo Style */
+.hero .logo {
+  width: 120px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+/* Content Box Style */
+.hero .content{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+/* Title Style */
+.hero .content h1{
+  font-size: 64px;
+  font-weight: 600;
+}
+.hero .content h1 span{
+  color: #ff3753;
+}
+
+/* Conter Style */
+.hero .content .launch-time{
+  display: flex;
+  margin: 20px 0 50px;
+  gap: 15px;
+}
+.hero .content .launch-time div{
+  flex-basis: 100px;
+}
+.hero .content .launch-time div p{
+  font-size: 65px;
+  margin-bottom: -25px;
+}
+.hero .content .launch-time div span{
+  font-size: 12px;
+  margin-left: 25px;
+}
+.hero .content .launch-time div:nth-child(3) span,
+.hero .content .launch-time div:nth-child(4) span{
+  margin-left: 14px;
+}
+
+/* Button Learn More Style */
+.hero .content button{
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: 0;
+  cursor: pointer;
+}
+.hero .content button img{
+  width: 15px;
+  margin-left: 15px;
+}
+
+/* Rocket Image Style */
+.hero .rocket{
+  width: 300px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+
+/* Rocket Animation */
+@keyframes rocket{
+  0%{
+    bottom: 0;
+    opacity: 0;
+  }
+  100%{
+    bottom: 105%;
+    opacity: 1;
+  }
+}
