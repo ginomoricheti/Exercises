@@ -1,0 +1,94 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  background: #222;
+}
+
+/* Main Container Box Style */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Title Style */
+.hero h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: -50px 0 50px 0;
+  color: #fff;
+}
+
+.hero h1 span {
+  color: salmon;
+  text-decoration: underline;
+}
+
+/* Textarea Style */
+.hero textarea {
+  width: 600px;
+  height: 250px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 0;
+  resize: none;
+}
+
+/* Buttons Container Style */
+.hero .buttons {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Select Box Style */
+.hero .buttons select {
+  flex: 1;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: 45px;
+  border: 0;
+  outline: 0;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.3);
+  background-image: url("/HTML-CSS-JS/53-text_to_voice/images/dropdown.png");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: calc(100% - 20px) 50%;
+}
+
+/* Button Style */
+.hero .buttons button {
+  width: 150px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 30px;
+  color: #fff;
+  background: salmon;
+  border-radius: 45px;
+  border: 0;
+  outline: 0;
+}
+
+.hero .buttons button i {
+  margin-right: 10px;
+}
