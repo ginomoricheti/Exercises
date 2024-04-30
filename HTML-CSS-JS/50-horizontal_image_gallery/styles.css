@@ -13,3 +13,65 @@
 body{
   background: #222;
 }
+
+/* Main Box Style (to center content) */
+.main-box{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gallery Box Style */
+.main-box .gallery{
+  display: flex;
+  width: 900px;
+  overflow: scroll;
+}
+
+/* Hidden scrollbar */
+.main-box .gallery::-webkit-scrollbar{
+  display: none;
+}
+
+/* Images Disposition */
+.main-box .gallery div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+/* Image size */
+.main-box .gallery div img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+/* Image Hover Effect */
+
+.main-box .gallery div img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Buttons Box */
+.gallery-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+/* Buttons Styles */
+#prev-btn,
+#next-btn{
+  width: 50px;
+  margin: 40px;
+  cursor: pointer;
+}
