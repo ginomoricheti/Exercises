@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/HTML-CSS-JS/49-validation_form/styles.css">
+  <script src="https://kit.fontawesome.com/44ead951f6.js" crossorigin="anonymous"></script>
+  <title>Gino Morichetti Simple Quiz</title>
+</head>
+
+<body>
+  
+<div class="main-box">
+  <form action="">
+    <i class="fas fa-paper-plane"></i>
+
+    <div class="input-group">
+      <label>Full Name</label>
+      <input id="name" type="text" placeholder="Enter your name" onkeyup="validateName()">
+      <span id="name-error"></span>
+    </div>
+    
+    <div class="input-group">
+      <label>Phone No.</label>
+      <input id="phone" type="tel" placeholder="4455667788" onkeyup="validatePhone()">
+      <span id="phone-error"></span>
+    </div>
+    
+    <div class="input-group">
+      <label>Email</label>
+      <input id="email" type="email" placeholder="Enter email" onkeyup="validateEmail()">
+      <span id="email-error"></span>
+    </div>
+    
+    <div class="input-group">
+      <label>Your message</label>
+      <textarea id="message" rows="5" placeholder="Enter your message" onkeyup="validateMessage()"></textarea>
+      <span id="message-error"></span>
+    </div>
+    
+    <button>Submit</button>
+    <span id="submit-error"></span>
+    
+  </form>
+</div>
+
+</body>
+<script src="/HTML-CSS-JS/49-validation_form/scripts.js"></script>
+</html>
