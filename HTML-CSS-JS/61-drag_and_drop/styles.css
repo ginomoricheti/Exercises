@@ -1,0 +1,50 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body{
+  background: #222;
+}
+
+/* Styles for Hero Section */
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#left, #right{
+  width: 300px;
+  min-height: 400px;
+  margin: 20px;
+  padding: 10px 20px;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+}
+
+.hero .list{
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 10px 0;
+  color: #fff;
+  background: #e91e63;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.hero .list img{
+  width: 15px;
+  width: 15px;
+  margin: 0 20px;
+}
