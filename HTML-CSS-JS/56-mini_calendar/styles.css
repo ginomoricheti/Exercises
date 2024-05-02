@@ -36,15 +36,17 @@
   justify-content: center;
   height: 100%;
   font-size: 24px;
-  border-radius: 0 10px 10px 0;
 }
 .hero .calendar-box .left{
   width: 58%;
+  border-radius: 10px 0 0 10px;
+  border-right: 2px solid #333;
 }
 .hero .calendar-box .right{
   width: 42%;
   background: #f4351e;
   color: #fff;
+  border-radius: 0 10px 10px 0;
 }
 
 /* Letter Calendar Style */

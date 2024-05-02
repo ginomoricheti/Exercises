@@ -1,0 +1,87 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Reset Styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body{
+  background: #222;
+}
+
+/* Styles for Hero Section */
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#f44336, #730228);
+}
+
+/* Styles for Selector */
+.hero .selector{
+  width: 350px;
+}
+
+/* Styling for Select Field */
+.hero .selector #select-field{
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Styling for Arrow Icon */
+.hero .selector #select-field img{
+  width: 12px;
+  transition: transform 0.5s;
+}
+
+/* Styling for List */
+.hero .selector #list{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Styling for Options */
+.hero .selector #list .options{
+  position: relative;
+  width: 100%;
+  padding: 15px 0 15px 70px;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Styling for Option Icons */
+.hero .selector #list .options img{
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  width: 25px;
+}
+
+/* Hover Effect for Options */
+.hero .selector #list .options:hover{
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Utility Classes */
+.hide{
+  visibility: hidden;
+}
+.rotate{
+  transform: rotate(180deg);
+}
