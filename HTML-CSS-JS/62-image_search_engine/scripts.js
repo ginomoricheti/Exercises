@@ -18,16 +18,16 @@ async function searchImages() {
   try {
     const response = await fetch(apiURL);
 
-    if (!response.ok) {
-      // Handle specific error cases
-      if (response.status === 404) {
-        throw new Error('API endpoint not found');
-      } else if (response.status === 403) {
-        throw new Error('Unauthorized access - check your API key');
-      } else {
-        throw new Error('Network response was not ok');
-      }
-    }
+    // if (!response.ok) {
+    //   // Handle specific error cases
+    //   if (response.status === 404) {
+    //     throw new Error('API endpoint not found');
+    //   } else if (response.status === 403) {
+    //     throw new Error('Unauthorized access - check your API key');
+    //   } else {
+    //     throw new Error('Network response was not ok');
+    //   }
+    // }
 
     const data = await response.json();
 
@@ -48,10 +48,10 @@ async function searchImages() {
       searchRlt.appendChild(imageLink);
     });
   } catch (error) {
-    console.error('Error fetching images:', error.message);
-    searchRlt.innerHTML = `Error fetching images: ${error.message}`;
-  }
-}
+  //   console.error('Error fetching images:', error.message);
+  //   searchRlt.innerHTML = `Error fetching images: ${error.message}`;
+  // 
+}}
 
 
 // Event listener for form submission.
