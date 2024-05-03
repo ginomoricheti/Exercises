@@ -21,7 +21,7 @@ body{
   height: 100vh;
 }
 
-.hero h1{
+.hero .top h1{
   margin: 100px auto 50px;
   text-align: center;
   font-weight: 600;

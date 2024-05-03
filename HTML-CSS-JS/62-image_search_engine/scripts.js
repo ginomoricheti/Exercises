@@ -20,7 +20,7 @@ async function searchImages(){
   const response = await fetch(apiURL);
   const data = await response.json();
 
-  if(searchRlt === 1){
+  if(page === 1){
     searchRlt.innerHTML = '';
   }
 
@@ -38,10 +38,10 @@ async function searchImages(){
     imageLink.appendChild(image);
     searchRlt.appendChild(imageLink);
 
-    btnMore.style.display = 'block';
+    // btnMore.style.display = 'block';
   });
 
-  // console.log(data); // Testing.
+// console.log(data); // Testing.
 }
 
 // Doing the search.
@@ -52,7 +52,13 @@ searchForm.addEventListener('submit', (e)=>{
 
 });
 
-btnMore.addEventListener('click', ()=>{
+// btnMore.addEventListener('click', ()=>{
+//   page ++;
+//   searchImages();
+// });
+
+// Charging more photos
+window.addEventListener('scrollend',()=>{
   page ++;
   searchImages();
 });
