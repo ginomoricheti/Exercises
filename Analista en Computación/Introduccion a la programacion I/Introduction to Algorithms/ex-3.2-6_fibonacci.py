@@ -27,7 +27,7 @@ for cicle in range(cicles):
   conjugated_golden_ratio = (1-sqrt(5)) / 2
   
   induction_fib = ((projected_golden_ratio ** cicle) - (conjugated_golden_ratio ** cicle)) / (sqrt(5))
-  proj_fib_arr[cicle] = induction_fib
+  proj_fib_arr[cicle] = round(induction_fib)
 
   print(f"Para {fib_arr[cicle]}, se espera {projected_golden_ratio}, y se obtuvo {actual_golden_ratio}")
   
