@@ -32,8 +32,6 @@ for cicle in range(cicles):
   print(f"Para {fib_arr[cicle]}, se espera {projected_golden_ratio}, y se obtuvo {actual_golden_ratio}")
   
   print(f"Calculando golden y conjugated ratios con induccion, se espera {induction_fib} y se tuvo {fib_arr[cicle]}")
-  
-  
 
 print("---------------------------------------------")
 print(f"Fibonacci final: {proj_fib_arr}")
